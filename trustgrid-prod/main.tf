@@ -3,8 +3,11 @@ variable "certificate-ssc" {}
 variable "certificate-ca_bundle" {}
 
 variable "aws_vpc_ssh_public_key_prod" {}
+variable "aws_vpc_ssh_public_key_dev" {}
 variable "node_license-prod-01" {}
 variable "node_license-prod-02" {}
+variable "node_license-dev-01" {}
+variable "node_license-dev-02" {}
 
 
 module "trustgrid" {
