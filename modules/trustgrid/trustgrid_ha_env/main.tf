@@ -10,10 +10,10 @@ locals {
 
 module "vpc_setup" {
   source        = "../vpc_setup"
-  aws_region    = "us-west-2"
+  aws_region    = var.aws_region
   customer_name = local.prefix
-  primary_az    = "us-west-2a"
-  secondary_az  = "us-west-2b"
+  primary_az    = var.primary_az
+  secondary_az  = var.secondary_az
   public_key    = var.ssh_public_key
   tags          = local.tags
 }
